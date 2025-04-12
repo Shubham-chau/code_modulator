@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Security Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-seedling"></i>
+        <span>FoodSecure</span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#food-waste">Food Waste</a>
+        <a href="#tips">Tips</a>
+        <a href="#donate" class="highlight">Donate Food</a>
+      </div>
+      <div class="mobile-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Ensuring Food Security For All</h1>
+          <p>Join our mission to reduce food waste and help those in need. Learn how you can make a difference in your community.</p>
+          <div class="buttons">
+            <button class="btn secondary" onclick="scrollToSection('food-waste')">Learn More</button>
+            <button class="btn primary" onclick="scrollToSection('donate')">Donate Food</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://www.compassion.com/multimedia/hunger-in-asia.jpg" alt="People sharing food">
+        </div>
+      </div>
+    </div>
+    <div class="wave"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Food Security</h2>
+        <p>Food security exists when all people, at all times, have physical and economic access to sufficient, safe and nutritious food.</p>
+      </div>
+      
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Around 811 Million</h3>
+          <p>People in the world face hunger daily despite enough food being produced globally</p>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-apple-alt"></i>
+          </div>
+          <h3>1.3 Billion Tons</h3>
+          <p>Of food is wasted globally every year, which is enough to feed 3 billion people</p>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-baby"></i>
+          </div>
+          <h3>144 Million Children</h3>
+          <p>Under age 5 are affected by stunting due to chronic malnutrition</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Waste Section -->
+  <section id="food-waste" class="food-waste">
+    <div class="container">
+      <div class="content-grid">
+        <div class="text-content">
+          <h2>The Impact of Food Waste</h2>
+          <p>Food waste is a global problem that affects the environment, economy, and society. Every time we waste food, we waste all the resources that went into producing it.</p>
+          
+          <div class="impact-items">
+            <div class="impact-item">
+              <div class="impact-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <div class="impact-text">
+                <h4>Environmental Impact</h4>
+                <p>Food waste in landfills produces methane, a greenhouse gas 25 times more potent than carbon dioxide.</p>
+              </div>
+            </div>
+            
+            <div class="impact-item">
+              <div class="impact-icon">
+                <i class="fas fa-coins"></i>
+              </div>
+              <div class="impact-text">
+                <h4>Economic Impact</h4>
+                <p>Food waste costs the global economy nearly $1 trillion annually in lost value and resources.</p>
+              </div>
+            </div>
+            
+            <div class="impact-item">
+              <div class="impact-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <div class="impact-text">
+                <h4>Social Impact</h4>
+                <p>Reducing food waste could help feed the millions who go hungry every day around the world.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="image-content">
+          <img src="https://images.unsplash.com/photo-1621956838481-f8f616950454?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Food waste illustration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips Section -->
+  <section id="tips" class="tips">
+    <div class="container">
+      <div class="section-header">
+        <h2>Tips to Reduce Food Waste</h2>
+        <p>Simple changes in how we buy, store, and use food can make a big difference.</p>
+      </div>
+      
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-shopping-basket"></i>
+          </div>
+          <h3>Plan Your Shopping</h3>
+          <p>Make a shopping list based on meals you plan to cook and check what you already have at home before buying more.</p>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-temperature-low"></i>
+          </div>
+          <h3>Store Food Properly</h3>
+          <p>Learn how to store different foods to maximize freshness and shelf life. Use proper containers and refrigerator settings.</p>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3>Use Leftovers Creatively</h3>
+          <p>Transform leftover meals into new dishes. Many foods can be repurposed into soups, stir-fries, or casseroles.</p>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-calendar"></i>
+          </div>
+          <h3>Understand Date Labels</h3>
+          <p>Learn the difference between "best before" and "use by" dates. Many foods are safe to eat after the best before date.</p>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Compost Food Scraps</h3>
+          <p>When food waste is unavoidable, composting is a great way to reduce its environmental impact while creating nutrient-rich soil.</p>
+        </div>
+        
+        <div class="tip-card">
+          <div class="tip-icon">
+            <i class="fas fa-share-alt"></i>
+          </div>
+          <h3>Share Extra Food</h3>
+          <p>If you have excess food that you can't use, consider donating it to food banks, shelters, or sharing with neighbors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Portal Section -->
+  <section id="donate" class="donate">
+    <div class="container">
+      <div class="section-header">
+        <h2>Donate Food</h2>
+        <p>Help us fight hunger in our community by donating excess food. We ensure your donation reaches those who need it most.</p>
+      </div>
+      
+      <div class="donation-panel">
+        <div class="donation-form" id="donationFormContainer">
+          <form id="donationForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+              <span class="error-message" id="nameError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              <span class="error-message" id="emailError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+              <span class="error-message" id="phoneError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="foodType">Type of Food</label>
+              <select id="foodType" name="foodType" required>
+                <option value="" disabled selected>Select Food Type</option>
+                <option value="fresh">Fresh Produce</option>
+                <option value="canned">Canned Goods</option>
+                <option value="packaged">Packaged Foods</option>
+                <option value="prepared">Prepared Meals</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error-message" id="foodTypeError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="quantity">Approximate Quantity</label>
+              <input type="text" id="quantity" name="quantity" placeholder="e.g., 5 kg, 10 boxes" required>
+              <span class="error-message" id="quantityError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="pickupDate">Preferred Pickup Date</label>
+              <input type="date" id="pickupDate" name="pickupDate" required>
+              <span class="error-message" id="pickupDateError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="address">Pickup Address</label>
+              <textarea id="address" name="address" placeholder="Your Complete Address" required></textarea>
+              <span class="error-message" id="addressError"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="notes">Additional Notes (Optional)</label>
+              <textarea id="notes" name="notes" placeholder="Anything else we should know?"></textarea>
+            </div>
+            
+            <button type="submit" class="btn primary submit-btn" id="submitBtn">Submit Donation</button>
+          </form>
+        </div>
+        
+        <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+          <h3>Thank You for Your Donation!</h3>
+          <p>We will contact you soon to arrange the pickup.</p>
+          <button class="btn primary" onclick="resetForm()">Submit Another Donation</button>
+        </div>
+        
+        <div class="donation-info">
+          <h3>How It Works</h3>
+          
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h4>Fill the Form</h4>
+                <p>Provide details about your food donation and your contact information.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h4>Confirmation</h4>
+                <p>Our team will contact you to confirm the pickup details within 24 hours.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h4>Food Pickup</h4>
+                <p>We'll collect the food from your location at the scheduled time.</p>
+              </div>
+            </div>
+            
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h4>Distribution</h4>
+                <p>The food will be distributed to those in need through our partner organizations.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-info">
+            <p><strong>Need assistance?</strong></p>
+            <p><i class="fas fa-phone"></i> Call us: (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> Email: donations@foodsecure.org</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <i class="fas fa-seedling"></i>
+            <span>FoodSecure</span>
+          </div>
+          <p>Working together to reduce food waste and ensure food security for all in our community.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#food-waste">Food Waste</a></li>
+              <li><a href="#tips">Tips</a></li>
+              <li><a href="#donate">Donate Food</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Educational Materials</a></li>
+              <li><a href="#">Food Storage Guide</a></li>
+              <li><a href="#">Meal Planning Tips</a></li>
+              <li><a href="#">Food Safety</a></li>
+            </ul>
+          </div>
+          
+          <div class="link-column">
+            <h4>Contact Us</h4>
+            <ul class="contact-list">
+              <li><i class="fas fa-map-marker-alt"></i> 123 Food Security Road, City, Country</li>
+              <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+              <li><i class="fas fa-envelope"></i> info@foodsecure.org</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> FoodSecure. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
